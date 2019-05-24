@@ -1,0 +1,389 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+      <title>Justin Knecht's Portfolio</title>
+      <meta name="description" content="The HTML5 Herald">
+      <meta name="author" content="SitePoint">
+
+      <link rel="stylesheet" href="css/hamburgers.css">
+      <link rel="stylesheet" href="css/style.css" />
+
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+        <script href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.min.css" rel="stylesheet" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.min.js"></script>
+
+
+      <link href="https://fastcdn.org/Animate.css/3.4.0/animate.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Heebo:100|Noto+Sans" rel="stylesheet">
+
+
+
+<!--jQuery-->
+<script>
+$(document).ready(function(){
+  $("#menuButton").click(function(){
+    $("#fullMenu").slideToggle();
+    $(".navFade").fadeToggle();
+  });
+  $(".navItem").click(function(){
+    $("#fullMenu").delay(900).slideToggle();
+    $(".navFade").delay(900).fadeToggle();
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $('.navItem').click(function(){
+    $('.hamburger').toggleClass('is-active');
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $('.selectVid').click(function(){
+    $('.myWork').fadeToggle();
+    $('.myVid').delay(550).fadeToggle();
+  });
+  $('.selectPhoto').click(function(){
+    $('.myWork').fadeToggle();
+    $('.myPhoto').delay(550).fadeToggle();
+  });
+  $('.selectWeb').click(function(){
+    $('.myWork').fadeToggle();
+    $('.myWeb').delay(550).fadeToggle();
+  });
+  $('.selectOther').click(function(){
+    $('.myWork').fadeToggle();
+    $('.myOther').delay(550).fadeToggle();
+  });
+  $('.arrowVid').click(function(){
+    $('.myVid').fadeOut();
+    $('.myWork').delay(550).fadeIn();
+  });
+  $('.arrowPhoto').click(function(){
+    $('.myPhoto').fadeOut();
+    $('.myWork').delay(550).fadeIn();
+  });
+  $('.arrowWeb').click(function(){
+    $('.myWeb').fadeOut();
+    $('.myWork').delay(550).fadeIn();
+  });
+  $('.arrowOther').click(function(){
+    $('.myOther').fadeOut();
+    $('.myWork').delay(550).fadeIn();
+  });
+});
+</script>
+
+<script>
+
+$(document).ready(function() {
+$('#fullpage').fullpage({
+dragAndMove: true,
+autoScrolling:true,
+scrollHorizontally: true
+});
+
+// methods
+$.fn.fullpage.setAllowScrolling(true);
+});
+
+new fullpage('#fullpage', {
+anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
+sectionsColor: ['#ffb3ba', '#bae1ff', '#ffffba', '#baffc9'],
+});
+
+</script>
+
+<style>
+.work {
+background-color: #cccccc;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+background-color: grey;
+}
+
+.zakki {
+  background-image: url('../img/zakki.png');
+}
+
+.drone {
+  background-image: url('../img/drone.png');
+}
+
+.yvette {
+  background-image: url('../img/yvette.png');
+}
+
+.academy {
+  background-image: url('../img/academy.png');
+}
+
+.soraia {
+  background-image: url('../img/soraia.png');
+}
+
+.bucket {
+  background-image: url('../img/bucket.png');
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="hamwrap" id="menuButton">
+  <button class="hamburger hamburger--squeeze" type="button">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+</div>
+        <div class="fs-sec fullnav" id="fullMenu" style="display: none;">
+            <div class="container fullnav-wrapper">
+              <div class="row">
+                <div class="col-sm-11">
+                  <ul>
+                  <li data-menuanchor="firstPage" class="navHome" >
+                    <h1 class="navHome animated fadeIn navItem"><a class="navHome" href="#firstPage" style="text-decoration: none; color: inherit;">Home</a></h1>
+                  </li>
+                  <br>
+                  <li data-menuanchor="secondPage" class="navAbout" >
+                    <h1 class="animated fadeIn navItem"><a href="#secondPage" style="text-decoration: none; color: inherit;">About Me</a></h1>
+                  </li>
+                  <br>
+                  <li data-menuanchor="thirdPage" class="navExperience" >
+                    <h1 class="animated fadeIn navItem"><a href="#thirdPage" style="text-decoration: none; color: inherit;">Experience</a></h1>
+                  </li>
+                  <br>
+                  <li data-menuanchor="fourthPage" class="navContact" >
+                    <h1 class="animated fadeIn navItem"><a href="#fourthPage" style="text-decoration: none; color: inherit;">Contact</a></h1>
+                  </li>
+                </div>
+              </div>
+                <div class="row menuFooter">
+                  <footer>
+                    <a href="https://facebook.com/sparkster49" target="_blank"><img class="icon" src="img/media/facebook.png" /></a>
+                    <a href="https://instagram.com/sparkster49" target="_blank"><img class="icon" src="img/media/instagram.png" /></a>
+                    <a href="https://linkedin.com/in/justin-knecht" target="_blank"><img class="icon" src="img/media/linkedin.png" /></a>
+                    <a href="files/KnechtResume.pdf" target="_blank"><img class="icon" src="img/media/resume.png" /></a>
+                    <a href="https://twitch.tv/sparkster49" target="_blank"><img class="icon" style="margin-right: 0px;" src="img/media/twitch.png" /></a>
+                  </footer>
+                </div>
+              </div>
+            </div>
+
+    <div id="fullpage">
+
+      <div class="section" data-anchor="firstPage">
+        <video id="heroVideo" class="hero" loop muted data-autoplay>
+          <source src="video/heroVideo.mp4" type="video/mp4">
+        </video>
+        <div class="hero" id="heroTitle">
+          <div class="heroTitleText navFade">
+            <p class="heroText sectionStyle">Justin Knecht</p>
+            <p class="subheroText">Videographer, Video Editor, and Web Designer</p>
+            <br>
+            <br>
+            <p class="subheroText">! Website Under Construction ! </p>
+          </div>
+        </div>
+
+        <a href="#secondPage"><div class="scroller animated fadeInUp navFade">
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <span class="text"></span>
+      </div></a>
+      </div>
+
+      <div class="section" data-anchor="secondPage" style="background-color: #303030; color: white;">
+        <div class="container navFade">
+          <div class="row">
+            <div class="col-sm-12 sectionStyle">
+              <h1 style="text-align: center;">About Me</h1>
+            </div>
+            <div class="col-sm-5"><img src="img/portrait.jpg" class="img-fluid" style="margin: 0 auto; position: relative;" /></div>
+            <div class="col-sm-7">
+              <br>
+              <p>Hey! I’m the guy you’re looking for. I’m a 22 year old videographer, editor and front-end web developer hailing from eastern Pennsylvania. I strive to create high-quality products and tell stories through the content and projects I manage.
+              I leverage my background in film, graphic design, computer science, and interactive development to create and implement effective web strategies. My diverse background helps me tell the right story for your audience and take the project from beginning to end.
+              Many people want a new website, but need the content for it too. I can assess your current site in terms of content, design, and data infrastructure and offer tangible improvements. Whether you want a new video testimonial, promotional photos or redesign of your site, I’m here to support you.
+              One of my biggest passions is live streaming and creating content on the online platform, Twitch. I’ve been creating by brand there as “Sparkster” since 2013, and produce YouTube videos to support it.
+              I have a go-getter personality and it drives me to support others through my creativity. I love what I do and I hope to support you and whatever you love to do.
+              <br>
+              <br>
+              I look forward to working with you in future endeavors!
+              <br>
+              <br>
+            </div>
+            <br>
+            <div class="col-sm-12"><p>I look forward to working with you on future endeavours! Check out where I excel below!
+            <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime dolorem quos error cupiditate officia voluptates! Hic animi saepe consequuntur, numquam. Architecto repellat autem, nobis facere hic error adipisci maxime necessitatibus!</p>
+            </div>
+          </div>
+        </div>
+        <a href="#thirdPage"><div class="scroller animated fadeInUp navFade">
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <span class="text"></span>
+      </div></a>
+      </div>
+
+      <div class="section" data-anchor="thirdPage" style="background-color: #202020">
+        <div class="container">
+          <div class="row myWork">
+
+
+
+
+
+                <div class="col-sm-12 sectionStyle">
+                  <h1 style="text-align: center;">My Work</h1>
+                </div>
+                <div class="col-lg-3 col-sm-6 work selectVid">
+                  <h2>Videography</h2>
+                </div>
+                <div class="col-lg-3 col-sm-6 work selectPhoto">
+                  <h2>Photography</h2>
+                </div>
+                <div class="col-lg-3 col-sm-6 work selectWeb">
+                  <h2>Web Markup</h2>
+                </div>
+                <div class="col-lg-3 col-sm-6 work selectOther">
+                  <h2>Other Work</h2>
+                </div>
+              </div>
+
+              <div class="row myVid" style="display: none;">
+                <div class="col-sm-12 sectionStyle">
+                  <i class="fas fa-arrow-left arrowSelect arrowVid"></i>
+                  <h1 style="text-align: center;">Videography</h1>
+                </div>
+                <div class="col-lg-3 col-sm-6 work zakki">
+                  <h2>Reckoning Day by Zakki Blakk</h2>
+                </div>
+                <div class="col-lg-3 col-sm-6 work drone">
+                  <h2>Rowan Drone Reel</h2>
+                </div>
+                <div class="col-lg-3 col-sm-6 work yvette">
+                  <h2>Live It For Today by Yvette Om</h2>
+                </div>
+                <div class="col-lg-3 col-sm-6 work academy">
+                  <h2>TaeKwonDo Academy Reel</h2>
+                </div>
+              </div>
+
+              <div class="row myPhoto" style="display: none;">
+                <div class="col-sm-12 sectionStyle">
+                  <i class="fas fa-arrow-left arrowSelect arrowPhoto"></i>
+                  <h1 style="text-align: center;">Photography</h1>
+                </div>
+                <div class="col-lg-3 col-sm-6 work">
+                  <h2>Project 1</h2>
+                </div>
+                <div class="col-lg-3 col-sm-6 work">
+                  <h2>Project 2</h2>
+                </div>
+                <div class="col-lg-3 col-sm-6 work">
+                  <h2>Project 3</h2>
+                </div>
+                <div class="col-lg-3 col-sm-6 work">
+                  <h2>Project 4</h2>
+                </div>
+              </div>
+
+              <div class="row myWeb" style="display: none;">
+                <div class="col-sm-12 sectionStyle">
+                  <i class="fas fa-arrow-left arrowSelect arrowWeb"></i>
+                  <h1 style="text-align: center;">Web Markup</h1>
+                </div>
+                <div class="col-lg-3 col-sm-6 work soraia">
+                  <h2>Soraia Website Redesign</h2>
+                </div>
+                <div class="col-lg-3 col-sm-6 work bucket">
+                  <h2>Rowan Univserity Bucket</h2>
+                </div>
+                <div class="col-lg-3 col-sm-6 work">
+                  <h2>Project 3</h2>
+                </div>
+                <div class="col-lg-3 col-sm-6 work">
+                  <h2>Project 4</h2>
+                </div>
+              </div>
+
+            <div class=" row myOther" style="display: none;">
+              <div class="col-sm-12 sectionStyle">
+                <i class="fas fa-arrow-left arrowSelect arrowOther"></i>
+                <h1 style="text-align: center;">Other Work</h1>
+              </div>
+              <div class="col-lg-3 col-sm-6 work">
+                <h2>Project 1</h2>
+              </div>
+              <div class="col-lg-3 col-sm-6 work">
+                <h2>Project 2</h2>
+              </div>
+              <div class="col-lg-3 col-sm-6 work">
+                <h2>Project 3</h2>
+              </div>
+              <div class="col-lg-3 col-sm-6 work">
+                <h2>Project 4</h2>
+              </div>
+            </div>
+
+
+
+
+
+
+          </div>
+        <a href="#fourthPage"><div class="scroller animated fadeInUp navFade">
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <span class="text"></span>
+      </div></a>
+      </div>
+
+      <div class="section" data-anchor="fourthPage" style="background-color: #202020">
+        <div class="container" style="">
+          <div class="row navFade">
+            <div class="col-sm-12 sectionStyle">
+              <h1 style="text-align: center;">Talk To Me!<br><br></h1>
+            </div>
+          </div>
+          <div class="row navFade">
+            <div class="col-sm-6">
+              <h3 style="text-align: center;"><i class="fas fa-phone"></i><br>610-216-9947</h3>
+            </div>
+            <div class="col-sm-6">
+              <h3 style="text-align: center;"><i class="fas fa-envelope"></i><br>justin.knecht72@gmail.com</h3>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script>
+      var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
+
+      var hamburgers = document.querySelectorAll(".hamburger");
+      if (hamburgers.length > 0) {
+        forEach(hamburgers, function(hamburger) {
+          hamburger.addEventListener("click", function() {
+            this.classList.toggle("is-active");
+          }, false);
+        });
+      }
+    </script>
+</body>
+</html>
