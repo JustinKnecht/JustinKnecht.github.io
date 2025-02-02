@@ -15,7 +15,10 @@ li {
   border-color: green !important;
 } */
 
-
+body {
+  background-color: #000;
+  background-repeat: repeat;
+}
 
 /* html, body {
   overflow-x: hidden;
@@ -68,20 +71,15 @@ a {
   transition: height 0.5s, transform 0.2s, opacity 1s;
 }
 
-a:hover {
+a:hover, a:focus, a:active {
   min-height: 50px !important;
   background-image: radial-gradient(farthest-corner at 50% -20px, rgba(255, 255, 255, 0.6) 0%, rgba(0, 0, 0, 0) 70%);
 }
 
-/* .row {
-  margin: 0 auto !important;
-  max-width: 80% !important;
-  min-width: 50% !important;
-} */
-
 
 
 .navItem {
+  font-size: 18pt;
   opacity: 1.0 !important;
   position: relative;
   cursor: pointer;
@@ -89,7 +87,7 @@ a:hover {
   transition: height 0.5s, transform 0.2s;
   z-index: 10;
 }
-.navItem:hover {
+.navItem:hover, .navItem:focus, .navItem:active {
   transform: translateY(10px);
   min-height: 50px !important;
 }
@@ -221,14 +219,12 @@ a:hover {
 .expPage {
   background-image: linear-gradient(rgba(0,0,0,255), rgba(20,20,20,255), rgba(20,20,20,255), rgba(20, 20, 20, 255));
   color: #000;
-  border-radius: 10px;
   color: #fff;
 }
 
 .projectPage {
   background-image: linear-gradient(rgba(0, 0, 0, 255), rgba(20, 20, 20, 255), rgba(20, 20, 20, 255), rgba(20, 20, 20, 255));
   color: #000;
-  border-radius: 10px;
   color: #fff;
 }
 
@@ -295,12 +291,15 @@ li>a {
 /*Media queries*/
 
 @media only screen and (max-width: 988px) {
+  .navItem{
+    font-size: 24pt;
+  }
   .nameTitle {
-    font-size: 4em !important;
+    font-size: 8em !important;
     text-align: center !important;
   }
   .subHero {
-    font-size: 1.5em !important;
+    font-size: 3em !important;
     text-align: center !important;
   }
   .imgSizer {
@@ -316,16 +315,12 @@ li>a {
 @media only screen and (max-width: 575px) {
 
   .nameTitle {
-    font-size: 3em !important;
+    font-size: 10em !important;
     text-align: center !important;
   }
 
-  .heroText {
-    font-size: 36pt;
-  }
-
   .subHero {
-    font-size: 1em !important;
+    font-size: 2em !important;
     text-align: center !important;
   }
 
@@ -336,34 +331,4 @@ li>a {
   h3 {
     font-size: 16pt !important;
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-body {
-  background-color: #000;
-  background-image: url('https://i.imgur.com/9Mtl0zd.jpg');
-  background-repeat: repeat;
-  min-height: 5000px;
 }
