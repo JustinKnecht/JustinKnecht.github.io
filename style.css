@@ -1,0 +1,355 @@
+/* div borders */
+
+/* div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav,
+ul,
+li {
+  border-style: dashed !important;
+  border-width: thin !important;
+  border-color: green !important;
+} */
+
+
+body {
+  background-color: #000;
+  background-repeat: repeat;
+}
+
+/* html, body {
+  overflow-x: hidden;
+} */
+
+/* div borders */
+
+/* FONTS */
+
+@font-face {
+  font-family: 'consola_monobold';
+  src: url('fonts/consolamono-bold-webfont.woff2') format('woff2'),
+    url('fonts/consolamono-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'garet_book';
+  src: url('fonts/Garet-Book.woff2') format('woff2'),
+    url('fonts/Garet-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+h2 {
+  font-size: 16pt;
+  font-family: 'garet_book';
+}
+
+h3 {
+  font-size: 32pt !important;
+  font-family: 'garet_book';
+  color: #fff !important;
+  text-shadow: 3px 3px 1px #000;
+  transition: all .3s ease-in-out;
+}
+
+p {
+  text-shadow: 2px 2px 1px #000;
+}
+
+a {
+ 
+  color: inherit !important;
+  text-decoration: none !important;
+  background-color: rgba(0, 0, 0, 0.0);
+  transition: height 0.5s, transform 0.2s, opacity 1s;
+}
+
+a:hover, a:focus, a:active {
+  min-height: 50px !important;
+  background-image: radial-gradient(farthest-corner at 50% -20px, rgba(255, 255, 255, 0.6) 0%, rgba(0, 0, 0, 0) 70%);
+}
+
+
+
+.navItem {
+  font-size: 18pt;
+  opacity: 1.0 !important;
+  position: relative;
+  cursor: pointer;
+  height: 100%;
+  transition: height 0.5s, transform 0.2s;
+  z-index: 10;
+}
+.navItem:hover, .navItem:focus, .navItem:active {
+  transform: translateY(10px);
+  min-height: 50px !important;
+}
+
+.centering {
+  position: absolute;
+  width: 100% !important;
+  left: 50% !important;
+}
+
+.nameTitle {
+  font-size: 5em !important;
+  font-family: consola_monobold !important;
+  color: #ffffff !important;
+  text-align: left !important;
+  vertical-align: middle !important;
+  transition: all .3s ease-in-out;
+}
+
+.heroStyle {
+  width: 70% !important;
+  border-style: none none solid none;
+  border-bottom-color: #fff;
+  border-width: thin;
+  transition: all .3s ease-in-out;
+}
+.subHero {
+  width: 70% !important;
+  font-family: garet_book;
+  color: white;
+  text-align: right !important;
+  font-size: 2em;
+  transition: all .3s ease-in-out;
+}
+
+.homeMoon {
+  position: absolute;
+  z-index: 500 !important;
+  top: 50px;
+  right: 10%;
+  opacity: 0.3;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.icon {
+  margin-right: 7px;
+  cursor: pointer;
+}
+
+.col {
+  text-align: center !important;
+  margin: 0 auto;
+}
+
+.middle {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  height: 100%;
+  position: relative;
+}
+
+.barIcon {
+  position: relative;
+  top: 10px;
+}
+
+.progress {
+  background-image: linear-gradient(to bottom, rgb(220, 46, 46), rgb(114, 0, 0));
+  height: 85% !important;
+  box-shadow: 4px 5px 1px #000;
+  transition: all .3s ease-in-out;
+}
+
+.progress-bar-vertical {
+  width: 30px;
+  min-height: 300px;
+  max-height: 350px;
+  margin: 0 auto;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  /* NEW, Spec - Firefox, Chrome, Opera */
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+  /* Safari 7.0+ */
+  transition: all .3s ease-in-out;
+}
+
+.progress-bar-vertical .progress-bar {
+  width: 100%;
+  height: 0;
+  box-shadow: 0px 0px 0px 2000px white;
+  background-image: none !important;
+  background-color: transparent !important;
+  -webkit-transition: height 0.6s ease;
+  -o-transition: height 0.6s ease;
+  transition: height 0.6s ease;
+  margin: 0 auto !important;
+  transition: all .3s ease-in-out;
+}
+
+.verticalAlign {
+  margin-top: 5rem;
+}
+
+.landingPage {
+  background-image: radial-gradient(farthest-corner at -20px 900px, #f35 0%, #43e 100%);
+}
+
+.expPage {
+  background-image: linear-gradient(rgba(0,0,0,255), rgba(20,20,20,255), rgba(20,20,20,255), rgba(20, 20, 20, 255));
+  color: #000;
+  color: #fff;
+}
+
+.projectPage {
+  background-image: linear-gradient(rgba(0, 0, 0, 255), rgba(20, 20, 20, 255), rgba(20, 20, 20, 255), rgba(20, 20, 20, 255));
+  color: #000;
+  color: #fff;
+}
+
+.contactPage {
+  background-image: url(img/contactBG.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+canvas {
+  z-index: -5 !important;
+  display: block;
+  outline: none;
+  border: none;
+}
+
+
+li>a {
+  color: white;
+}
+
+.centering {
+  width: 80%;
+  margin: 0 auto;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.imgSizer {
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+  margin: 10px 10px;
+}
+
+.imgSizer:hover {
+  transform: scale(1.2);
+}
+
+.imgParent {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  float: right;
+}
+.image1 {
+  position: absolute;
+
+}
+.image2 {
+  position: relative;
+
+  opacity: 0.0;
+}
+.image2:hover {
+  opacity: 1.0;
+}
+
+
+/*Media queries*/
+
+@media only screen and (max-width: 988px) {
+  .navItem{
+    font-size: 16pt;
+  }
+  .nameTitle {
+    font-size: 5em !important;
+    text-align: center !important;
+  }
+  .subHero {
+    font-size: 2em !important;
+    text-align: center !important;
+  }
+
+
+  h3 {
+    font-size: 24pt !important;
+  }
+
+
+}
+
+@media only screen and (max-width: 575px) {
+
+  .nameTitle {
+    font-size: 3em !important;
+    text-align: center !important;
+  }
+
+  .subHero {
+    font-size: 1em !important;
+    text-align: center !important;
+  }
+
+  .col {
+    margin-right: 8px;
+  }
+
+  h3 {
+    font-size: 20pt !important;
+  }
+
+  p {
+    font-size: 8pt;
+  }
+
+  .image1 {
+    position: absolute;
+    margin: 0 auto;
+  }
+
+  .image2 {
+    position: absolute;
+    margin: 0 auto;
+  }
+
+}
+
+
+@media only screen and (max-width: 500px) {
+  .navItem {
+      font-size: 12pt;
+  }
+}
